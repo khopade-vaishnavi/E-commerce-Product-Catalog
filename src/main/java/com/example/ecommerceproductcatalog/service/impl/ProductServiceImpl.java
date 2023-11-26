@@ -95,7 +95,6 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductMaster> getProductsByCategory(Integer categoryId) {
         CategoryMaster category = categoryRepository.findById(categoryId)
                 .orElseThrow(() -> new RuntimeException("Category not found"));
-
         return productRepository.findByCategoryMaster(category);
     }
 }
