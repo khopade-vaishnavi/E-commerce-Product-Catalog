@@ -82,6 +82,15 @@
     }
 ]
 
+## Postman Collection
+
+### Import Instructions:
+
+1. Download the [Postman Collection JSON File](path-to-local-file.json).
+2. Open Postman.
+3. Click on the "Import" button in the top-left corner.
+4. Choose the file you downloaded.
+5. The collection will be imported into your local Postman instance.
 
 
 
