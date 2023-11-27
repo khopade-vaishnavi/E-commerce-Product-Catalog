@@ -1,6 +1,7 @@
 package com.example.ecommerceproductcatalog.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +20,7 @@ public class CategoryMaster {
     private String name;
 
     @OneToMany(mappedBy = "categoryMaster", cascade = CascadeType.ALL)
-    @JsonBackReference
+    @JsonIgnore
     private List<ProductMaster> products = new ArrayList<>();
 
 }

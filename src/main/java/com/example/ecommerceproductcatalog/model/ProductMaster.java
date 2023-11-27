@@ -1,5 +1,6 @@
 package com.example.ecommerceproductcatalog.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,7 +19,7 @@ public class ProductMaster {
 
     @ManyToOne
     @JoinColumn(name = "category_id")
-    @JsonManagedReference
+    @JsonIgnore
     private CategoryMaster categoryMaster;
 
 }
